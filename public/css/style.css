@@ -1,0 +1,266 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   margin-top: 1%;
+   background-color: #fff;
+   color: #000;
+
+}
+header{
+  width:100%;
+}
+nav{
+  display: flex;
+
+  justify-content: space-between;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.1);
+}
+nav img{
+  padding-left: 15%;
+  width: 40%;
+}
+
+.enlaces{
+  background-color: #fff;
+  width: 100%;
+  display:none;
+}
+
+.logo:hover .enlaces{
+  display: block;
+}
+.subnav-content a:hover {background-color: #ddd;}
+
+.a:hover .subnav-content {display: block;}
+
+
+.logo{
+  padding-top: 2%;
+  padding-right: 6%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.enlaces button{
+  background-color: #000;
+  color:#fff;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+.botonMenu:checked~.enlaces{
+  margin-left:  0;
+}
+.enlaces .subnav-content{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  display: none;
+
+
+}
+.enlaces .subnavbtn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: right;
+    outline: none;
+}
+.subnav-content {
+  display: none;
+  background-color: #f9f9f9;
+  font-size: 20px; /* Increased text to enable scrolling */
+  width: 70%;
+  z-index: 1;
+}
+.subnav-content a {
+  float: none;
+  color: #000;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 1%;
+
+}
+
+.test{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+  width: 100%;
+  height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: Red;
+  background-image: url('/storage/mapa.png');
+  background-size: contain;
+}
+.test h1{
+  text-align: center;
+}
+.test h1 a{
+  text-decoration: none;
+  color:#000;
+}
+.central{
+  margin-top: 3%;
+  margin-bottom: 2%;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.central h1{
+
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 4%;
+}
+.central p{
+  padding: 2%;
+  text-align: center;
+  line-height: 150%;
+}
+.central ol{
+  padding: 6%;
+  align-items: center;
+  text-align: center;
+  line-height: 150%;
+}
+.who{
+  background-color:#fff;
+  padding:2%;
+  border: 1px solid #fff;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.1);
+
+
+}
+.who h2{
+  margin-bottom: 6%;
+}
+.who h3{
+  margin-bottom: 13%;
+  margin-top: 13%;
+}
+.who img{
+  height: 100%;
+}
+.aut{
+  padding-top: 2%;
+  background-color: #58a5a3;
+  display: flex;
+  padding: 2%;
+  border-bottom:  1px solid #fff;
+}
+.autp{
+  width: 70%;
+  padding:2%;
+}
+.form{
+  padding: 2%;
+  line-height: 200%;
+}
+.form label{
+  padding: 2%;
+
+}
+.form button{
+  margin: 2%;
+
+}
+
+@media (min-width: 600px){
+  header label{
+    display: none;
+    list-style: none;
+
+  }
+  nav img{
+    width: 80%;
+  }
+  .subnavbtn2{
+    display: none;
+  }
+  .enlaces .a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-right: 3%;
+  }
+  .logo:hover .enlaces{
+    display: flex;
+  }
+  .enlaces{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .logo{
+    padding-top: 0%;
+    padding-right: 0%;
+    width: 75%;
+  }
+  .subnavbtn p{
+    color:#000;
+    text-align: center;
+
+  }
+  .subnav-content a{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width:100%;
+  }
+  #subnavbtn2{
+    display: none;
+  }
+  section{
+    display: flex;
+    justify-content: space-between;
+  }
+  .test{
+    width:20%;
+    margin-top: 3%;
+  }
+  .central{
+    width: 50%;
+
+  }
+  .central p{
+      text-align: justify;
+  }
+  .central ol{
+    width: 80%;
+    text-align: justify;
+  }
+  .central ol li{
+    padding-top: 1%;
+  }
+  .who{
+    width:25%;
+    margin-top: 3%;
+    padding: 0;
+    text-align: center;
+    margin-right:  0.5%;
+  }
+  .aut{
+    width: 100%;
+    text-align: justify;
+  }
+
+
+}

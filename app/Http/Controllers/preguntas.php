@@ -22,7 +22,7 @@ class preguntas extends Controller
       $eneat7=0;
       $eneat8=0;
       $eneat9=0;
-      
+
       $req->getPathInfo();
 
       foreach ($req->request as $re) {

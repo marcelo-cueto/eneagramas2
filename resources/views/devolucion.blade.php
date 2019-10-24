@@ -1,52 +1,25 @@
 @extends('layouts.plantilla')
 @section('titulo')
-  Test
+   Resultado Test de Personalidad
 @endsection
 
 @section('principal')
-  <div class="test">
-    <h1><a href="/prueba">Hacer Test</a></h1>
-  </div>
+
   <div class="central">
-      <h1>Usted es {{$final}}</h1>
+    <h2>Resultado</h2>
+      <img src="/storage/eneagrama.png" alt= 300px usemap="#mapaEneagrama">
+      <map name="mapaEneagrama">
+         <area shape="circle" coords="496, 120, 35" href="mirarme/eneatipo1" alt="EL UNO" title='puto el que lee'>
+         <area shape="circle" coords="591, 282, 35" href="mirarme/eneatipo2" alt="EL DOS">
+         <area shape="circle" coords="557, 467, 35" href="mirarme/eneatipo3" alt="EL TRES">
+         <area shape="circle" coords="416, 587, 35" href="mirarme/eneatipo4" alt="EL CUATRO">
+         <area shape="circle" coords="227, 587, 35" href="mirarme/eneatipo5" alt="EL CINCO">
+         <area shape="circle" coords="86, 467, 35" href="mirarme/eneatipo6" alt="EL SEIS">
+         <area shape="circle" coords="51, 282, 35" href="mirarme/eneatipo7" alt="EL SIETE">
+         <area shape="circle" coords="144, 120, 35" href="mirarme/eneatipo8" alt="EL OCHO">
+         <area shape="circle" coords="320, 56, 35" href="mirarme/eneatipo9" alt="EL NUEVE">
+      </map>
+
   </div>
-  <div class="who">
-    <h2>Autoras</h2>
-    <div class="aut">
-      <img src="/storage/monica.png" alt="">
-      <div class="autp">
-        <h3>Mónica Ivanissevich</h3>
-        <p>Curiosa.<br>
-            Innovadora.<br>
-            Comprometida docente.<br>
-            Empecinada lectora.<br>
-            Alguien como alguien más,
-            que se atrevió a escribir consul-
-            tando autores “tan distintos y tan
-            iguales”. Reescribiendo y corri-
-            giendo el más leve guiño de una
-            coma, hasta plasmar este libro en
-            dueto, “juntas a la par”.</p>
-      </div>
-    </div>
-    <div class="aut">
-      <img src="/storage/jaqui.png" alt="">
-      <div class="autp">
-        <h3>Jaqueline Pels</h3>
-        <p>Madre, amiga,
-            investigadora,
-            emprendedora.<br>
-            Sensible, espiritual.<br>
-            Amante de la naturaleza,
-            de los silencios, de las buenas
-            conversaciones, de la lectura,
-            del arte, de cocinar. Convencida
-            de que la vida es un intercambio
-            permanente de regalos y que este
-            libro, sin sus lectores no existe.
-            lectores no existe.
-          </p>
-      </div>
-    </div>
-  </div>
+
 @endsection

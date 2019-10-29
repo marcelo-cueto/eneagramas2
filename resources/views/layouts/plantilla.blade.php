@@ -39,26 +39,28 @@
             <div class="a">
               <button class="subnavbtn"><p>MIRAR DENTRO</p> </button>
               <div class='subnav-content'>
-                <a href="/mirar_adentro/herida"> <p>EXPERIENCIA INTRAUTERINA- HERIDA PRIMARIA</p></a>
-                <a href="#"><p>CENTROS ENERGÉTICOS  - MECANISMO DE VINCULARIDAD</p></a>
-                <a href="#"><p>FOCO DE LA ENERGÍA - MANEJO DE LA ENERGÍA</p></a>
-                <a href="#"><p>NECESIDAD DISTINTIVA:</p></a>
+                <a href="/herida"> <p>EXPERIENCIA INTRAUTERINA- HERIDA PRIMARIA</p></a>
+                <a href="/vincularidad"><p>CENTROS ENERGÉTICOS  - MECANISMO DE VINCULARIDAD</p></a>
+                <a href="/energia"><p>FOCO DE LA ENERGÍA - MANEJO DE LA ENERGÍA</p></a>
+                <a href="/distintiva"><p>NECESIDAD DISTINTIVA:</p></a>
               </div>
             </div>
             <div class="a">
               <button class="subnavbtn"><p>CAMINOS</p> </button>
               <div class='subnav-content'>
-                <a href="#"> <p>ALEJAMIENTO DE SI MISMO</p></a>
-                <a href="#"><p>ENCUENTRO CONSIGO</p></a>
+                <a href="/alejamiento/alejamiento"> <p>ALEJAMIENTO DE SI MISMO</p></a>
+                <a href="/encuentro"><p>ENCUENTRO CONSIGO</p></a>
               </div>
             </div>
             <div class="a">
-              <button class="subnavbtn"><p> RECIBIR</p></button>
+              <button class="subnavbtn"><a href="recibir1"><p> RECIBIR</p></a></button>
 
             </div>
             <div class="a">
-              <button class="subnavbtn"><p>DAR</p> </button>
-              <div class='subnav-content'>
+              <button class="subnavbtn"><a href="dar1"><p>DAR</p></a> </button>
+
+
+
               </div>
             </div>
           </div>
@@ -67,12 +69,12 @@
     </header>
     <section>
       <div class="test">
-        <h1><a href="/prueba">Test de Personalidad</a></h1>
+        <h1><a href="/test">Test de Personalidad</a></h1>
       </div>
       @yield('principal')
       <div class="test">
         <h1><a href=@php if (Auth::check()){
-        if (Auth::user()->compro==0 ) {
+        if (Auth::user()->collection_status==NULL ) {
           echo '/compra';
         } else{
           echo '/download';

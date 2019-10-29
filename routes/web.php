@@ -23,8 +23,7 @@ Route::get('/eneatipo1', function () {
 Route::get('/complementos1', function () {
     return view('complementos1');
 });
-Route::get('/prueba', 'preguntas@listado' );
-Route::post('/devolucion','preguntas@resultado');
+
 Route::get('/who', function () {
     return view('who');
 });
@@ -147,28 +146,18 @@ Route::get('/mirar_al_mundo/ciegos/ciegos8', function () {
 Route::get('/mirar_al_mundo/ciegos/ciegos9', function () {
     return view('/mirar_al_mundo/ciegos/ciegos9');
 });
-Route::get('/mirar_adentro/herida', function () {
-    return view('/mirar_adentro/herida');
+Route::get('/herida', function () {
+    return view('/herida');
 });
-Route::get('/mirar_adentro/herida1', function () {
-    return view('/mirar_adentro/herida1');
+Route::get('/vincularidad', function () {
+    return view('/vincularidad');
 });
-Route::get('/mirar_adentro/herida2', function () {
-    return view('/mirar_adentro/herida2');
+Route::get('/energia', function () {
+    return view('/energia');
 });
-Route::get('/mirar_adentro/herida3', function () {
-    return view('/mirar_adentro/herida3');
+Route::get('/distintiva', function () {
+    return view('/distintiva');
 });
-Route::get('/mirar_adentro/herida4', function () {
-    return view('/mirar_adentro/herida4');
-});
-Route::get('/mirar_adentro/herida5', function () {
-    return view('/mirar_adentro/herida5');
-});
-Route::get('/mirar_adentro/herida6', function () {
-    return view('/mirar_adentro/herida6');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -178,5 +167,95 @@ Route::get('/auth/login', function () {
 Route::get('/auth/register', function () {
     return view('auth/register');
 });
+Route::get('/alejamiento/alejamiento', function () {
+    return view('/caminos/alejamiento/alejamiento');
+});Route::get('/alejamiento/alejamiento1', function () {
+    return view('/caminos/alejamiento/alejamiento1');
+});
+Route::get('/alejamiento/alejamiento2', function () {
+    return view('/caminos/alejamiento/alejamiento2');
+});
+Route::get('/alejamiento/alejamiento3', function () {
+    return view('/caminos/alejamiento/alejamiento3');
+});
+Route::get('/alejamiento/alejamiento4', function () {
+    return view('/caminos/alejamiento/alejamiento4');
+});
+Route::get('/alejamiento/alejamiento5', function () {
+    return view('/caminos/alejamiento/alejamiento5');
+});
+Route::get('/alejamiento/alejamiento6', function () {
+    return view('/caminos/alejamiento/alejamiento6');
+});
+Route::get('/alejamiento/alejamiento7', function () {
+    return view('/caminos/alejamiento/alejamiento7');
+});
+Route::get('/alejamiento/alejamiento8', function () {
+    return view('/caminos/alejamiento/alejamiento8');
+});
+Route::get('  /alejamiento/alejamiento9', function () {
+    return view('/caminos/alejamiento/alejamiento9');
+});
+Route::get('/encuentro', function () {
+    return view('/caminos/encuentro/encuentro');
+});
+Route::get('encuentro1', function () {
+    return view('/caminos/encuentro/encuentro1');
+});
+Route::get('encuentro2', function () {
+    return view('/caminos/encuentro/encuentro2');
+});
+Route::get('encuentro3', function () {
+    return view('/caminos/encuentro/encuentro3');
+});
+Route::get('encuentro4', function () {
+    return view('/caminos/encuentro/encuentro4');
+});
+Route::get('encuentro5', function () {
+    return view('/caminos/encuentro/encuentro5');
+});
+Route::get('encuentro6', function () {
+    return view('/caminos/encuentro/encuentro6');
+});
+Route::get('encuentro7', function () {
+    return view('/caminos/encuentro/encuentro7');
+});
+Route::get('encuentro8', function () {
+    return view('/caminos/encuentro/encuentro8');
+});
+Route::get('encuentro9', function () {
+    return view('/caminos/encuentro/encuentro9');
+});
+Route::get('dar1', function () {
+    return view('/dar/dar1');
+});
+Route::get('recibir1', function () {
+    return view('/recibir/recibir1');
+});
+
 Route::get('/compra', 'HomeController@compra');
-Route::get('/checkout/preferences','mercadoPagoController@createPreferencePayment');  
+Route::get('/checkout/preferences','mercadoPagoController@createPreferencePayment');
+Route::get('succes', 'mercadoPagoController@succes');
+Route::get('/download',function () {
+    return view('/download');
+})->middleware('auth');
+Route::get('/fulltest', 'fulltest@primerLista');
+Route::post('/pag2', 'fulltest@segundaLista');
+Route::post('/pag3', 'fulltest@tercerLista');
+Route::post('/pag4', 'fulltest@cuartaLista');
+Route::post('/pag5', 'fulltest@quintaLista');
+Route::post('/pag6', 'fulltest@sextaLista');
+Route::post('/pag7', 'fulltest@septimaLista');
+Route::post('/pag8', 'fulltest@octavaLista');
+Route::post('/pag9', 'fulltest@novenaLista');
+Route::post('/devolucion', 'fulltest@resultado');
+Route::get('/test', 'preguntas@primerLista');
+Route::post('/pag2t', 'preguntas@segundaLista');
+Route::post('/pag3t', 'preguntas@tercerLista');
+Route::post('/pag4t', 'preguntas@cuartaLista');
+Route::post('/pag5t', 'preguntas@quintaLista');
+Route::post('/pag6t', 'preguntas@sextaLista');
+Route::post('/pag7t', 'preguntas@septimaLista');
+Route::post('/pag8t', 'preguntas@octavaLista');
+Route::post('/pag9t', 'preguntas@novenaLista');
+Route::post('/devolucion', 'preguntas@resultado');

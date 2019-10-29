@@ -18,7 +18,7 @@
     <p>El eneagrama es un sistema de tipologías que nos ayudan a reconocer aquello que ya sabemos sobre nosotros mismos y a conocer el propósito que tiene vincularnos con los otros eneatipos.</p>
     <p>¿Cuál eneatipo soy? ¿Cómo saber mi eneatipo? </p>
     <p>El test de eneatipo te permite conocer qué eneatipo sos. </p>
-    <a href="/prueba">Descubrí quién sos</a>
+    <a href="/prueba" class='algo'>Descubrí quién sos</a>
   </div>
 
 

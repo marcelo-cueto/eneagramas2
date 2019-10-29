@@ -7,11 +7,42 @@ use App\pregunta;
 
 class preguntas extends Controller
 {
-    public function listado(){
-      $preguntas=pregunta::all();
-
-      return view('/prueba', compact('preguntas'));
-    }
+  public function primerLista(){
+     $preguntas=pregunta::whereBetween('id', [0, 5])->get();
+     return view('/test/pag1', compact('preguntas'));
+  }
+  public function segundaLista(Request $req){
+     $preguntas=pregunta::whereBetween('id', [6, 10])->get();
+     return view('/test/pag2', compact('preguntas', 'req'));
+  }
+  public function tercerLista(Request $req){
+     $preguntas=pregunta::whereBetween('id', [11, 15])->get();
+     return view('/test/pag3', compact('preguntas', 'req'));
+  }
+  public function cuartaLista(Request $req){
+     $preguntas=pregunta::whereBetween('id', [16, 20])->get();
+     return view('/test/pag4', compact('preguntas', 'req'));
+  }
+  public function quintaLista(Request $req){
+     $preguntas=pregunta::whereBetween('id', [21, 25])->get();
+     return view('/test/pag5', compact('preguntas', 'req'));
+  }
+  public function sextaLista(Request $req){
+     $preguntas=pregunta::whereBetween('id', [26, 30])->get();
+     return view('/test/pag6', compact('preguntas', 'req'));
+  }
+  public function septimaLista(Request $req){
+     $preguntas=pregunta::whereBetween('id', [31, 35])->get();
+     return view('/test/pag7', compact('preguntas', 'req'));
+  }
+  public function octavaLista(Request $req){
+     $preguntas=pregunta::whereBetween('id', [36, 40])->get();
+     return view('/test/pag8', compact('preguntas', 'req'));
+  }
+  public function novenaLista(Request $req){
+     $preguntas=pregunta::whereBetween('id', [41, 45])->get();
+     return view('/test/pag9', compact('preguntas', 'req'));
+  }
     public function resultado(Request $req){
       $eneat1=0;
       $eneat2=0;
@@ -37,10 +68,10 @@ class preguntas extends Controller
            $eneat2=$eneat2+1;
         }
         elseif ($re==4) {
-           $eneat1==$eneat1+1;
+           $eneat1=$eneat1+1;
         }
         elseif ($re=5) {
-           $eneat5=$eneat5+1;
+           $eneat5++;
         }
         elseif ($re=6) {
           $eneat8=$eneat8+1;
@@ -79,7 +110,7 @@ class preguntas extends Controller
            $eneat4=$eneat4+1;
         }
         elseif ($re==18) {
-           $eneat5=$eneat5+1;
+           $eneat5++;
         }
         elseif ($re==19) {
            $eneat4=$eneat4+1;
@@ -142,7 +173,7 @@ class preguntas extends Controller
            $eneat1=$eneat1+1;
         }
         elseif ($re==39) {
-           $eneat5=$eneat5+1;
+           $eneat5++;
         }
         elseif ($re==40) {
            $eneat7=$eneat7+1;
@@ -157,151 +188,26 @@ class preguntas extends Controller
            $eneat1=$eneat1+1;
         }
         elseif ($re==44) {
-           $eneat5=$eneat5+1;
+           $eneat5++;
         }
         elseif ($re==45) {
-           $eneat5=$eneat5+1;
+           $eneat5++;
         }
 
       }
+    
+      $porcentajes[]=($eneat1*100)/5;
+      $porcentajes[]=($eneat2*100)/5;
+      $porcentajes[]=($eneat3*100)/5;
+      $porcentajes[]=($eneat4*100)/5;
+      $porcentajes[]=($eneat5*100)/5;
+      $porcentajes[]=($eneat6*100)/5;
+      $porcentajes[]=($eneat7*100)/5;
+      $porcentajes[]=($eneat8*100)/5;
+      $porcentajes[]=($eneat9*100)/5;
 
+    return view('/devolucion', compact('porcentajes'));
 
-    if ($eneat1>$eneat2 &&$eneat1>$eneat3&&$eneat1>$eneat4&&$eneat1>$eneat5&&$eneat1>$eneat6&&$eneat1>$eneat7 &&$eneat1>$eneat8 &&$eneat1>$eneat9) {
-       $final='Eneatipo 1';
-    }
-    elseif ($eneat1==$eneat2 &&$eneat1>$eneat3&&$eneat1>$eneat4&&$eneat1>$eneat5&&$eneat1>$eneat6&&$eneat1>$eneat7 &&$eneat1>$eneat8 &&$eneat1>$eneat9) {
-       $final='Eneatipo 1 y Eneatipo 2';
-    }
-    elseif ($eneat1>$eneat2 &&$eneat1==$eneat3&&$eneat1>$eneat4&&$eneat1>$eneat5&&$eneat1>$eneat6&&$eneat1>$eneat7 &&$eneat1>$eneat8 &&$eneat1>$eneat9) {
-       $final='Eneatipo 1 y Eneatipo 3';
-    }
-    elseif ($eneat1>$eneat2 &&$eneat1>$eneat3&&$eneat1==$eneat4&&$eneat1>$eneat5&&$eneat1>$eneat6&&$eneat1>$eneat7 &&$eneat1>$eneat8 &&$eneat1>$eneat9) {
-       $final='Eneatipo 1 y Eneatipo 4';
-    }
-    elseif ($eneat1>$eneat2 &&$eneat1>$eneat3&&$eneat1>$eneat4&&$eneat1==$eneat5&&$eneat1>$eneat6&&$eneat1>$eneat7 &&$eneat1>$eneat8 &&$eneat1>$eneat9) {
-       $final='Eneatipo 1 y Eneatipo 5';
-    }
-    elseif ($eneat1>$eneat2 &&$eneat1>$eneat3&&$eneat1>$eneat4&&$eneat1>$eneat5&&$eneat1==$eneat6&&$eneat1>$eneat7 &&$eneat1>$eneat8 &&$eneat1>$eneat9) {
-       $final='Eneatipo 1 y Eneatipo 6';
-    }
-    elseif ($eneat1>$eneat2 &&$eneat1>$eneat3&&$eneat1>$eneat4&&$eneat1>$eneat5&&$eneat1>$eneat6&&$eneat1==$eneat7 &&$eneat1>$eneat8 &&$eneat1>$eneat9) {
-       $final='Eneatipo 1 y Eneatipo 7';
-    }
-    elseif ($eneat1>$eneat2 &&$eneat1>$eneat3&&$eneat1>$eneat4&&$eneat1>$eneat5&&$eneat1>$eneat6&&$eneat1>$eneat7 &&$eneat1==$eneat8 &&$eneat1>$eneat9) {
-       $final='Eneatipo 1 y Eneatipo 8';
-    }
-    elseif ($eneat1>$eneat2 &&$eneat1>$eneat3&&$eneat1>$eneat4&&$eneat1>$eneat5&&$eneat1>$eneat6&&$eneat1>$eneat7 &&$eneat1>$eneat8 &&$eneat1==$eneat9) {
-       $final='Eneatipo 1 y Eneatipo 9';
-    }
-    elseif ($eneat2>$eneat1 &&$eneat2>$eneat3&&$eneat2>$eneat4&&$eneat2>$eneat5&&$eneat2>$eneat6&&$eneat2>$eneat7 &&$eneat2>$eneat8 &&$eneat2>$eneat9) {
-       $final='Eneatipo 2';
-    }
-    elseif ($eneat2>$eneat1 &&$eneat2==$eneat3&&$eneat2>$eneat4&&$eneat2>$eneat5&&$eneat2>$eneat6&&$eneat2>$eneat7 &&$eneat2>$eneat8 &&$eneat2>$eneat9) {
-       $final='Eneatipo 2 y Eneatipo 3';
-    }
-    elseif ($eneat2>$eneat1 &&$eneat2>$eneat3&&$eneat2==$eneat4&&$eneat2>$eneat5&&$eneat2>$eneat6&&$eneat2>$eneat7 &&$eneat2>$eneat8 &&$eneat2>$eneat9) {
-       $final='Eneatipo 2 y Eneatipo 4';
-    }
-    elseif ($eneat2>$eneat1 &&$eneat2>$eneat3&&$eneat2>$eneat4&&$eneat2==$eneat5&&$eneat2>$eneat6&&$eneat2>$eneat7 &&$eneat2>$eneat8 &&$eneat2>$eneat9) {
-       $final='Eneatipo 2 y Eneatipo 5';
-    }
-    elseif ($eneat2>$eneat1 &&$eneat2>$eneat3&&$eneat2>$eneat4&&$eneat2>$eneat5&&$eneat2==$eneat6&&$eneat2>$eneat7 &&$eneat2>$eneat8 &&$eneat2>$eneat9) {
-       $final='Eneatipo 2 y Eneatipo 6';
-    }
-    elseif ($eneat2>$eneat1 &&$eneat2>$eneat3&&$eneat2>$eneat4&&$eneat2>$eneat5&&$eneat2>$eneat6&&$eneat2==$eneat7 &&$eneat2>$eneat8 &&$eneat2>$eneat9) {
-       $final='Eneatipo 2 y Eneatipo 7';
-    }
-    elseif ($eneat2>$eneat1 &&$eneat2>$eneat3&&$eneat2>$eneat4&&$eneat2>$eneat5&&$eneat2>$eneat6&&$eneat2>$eneat7 &&$eneat2==$eneat8 &&$eneat2>$eneat9) {
-       $final='Eneatipo 2 y Eneatipo 8';
-    }
-    elseif ($eneat2>$eneat1 &&$eneat2>$eneat3&&$eneat2>$eneat4&&$eneat2>$eneat5&&$eneat2>$eneat6&&$eneat2>$eneat7 &&$eneat2>$eneat8 &&$eneat2==$eneat9) {
-       $final='Eneatipo 2 y Eneatipo 9';
-    }
-    elseif ($eneat3>$eneat2 &&$eneat3>$eneat1&&$eneat3>$eneat4&&$eneat3>$eneat5&&$eneat3>$eneat6&&$eneat3>$eneat7 &&$eneat3>$eneat8 &&$eneat3>$eneat9) {
-       $final='Eneatipo 3';
-    }
-    elseif ($eneat3>$eneat2 &&$eneat3>$eneat1&&$eneat3==$eneat4&&$eneat3>$eneat5&&$eneat3>$eneat6&&$eneat3>$eneat7 &&$eneat3>$eneat8 &&$eneat3>$eneat9) {
-       $final='Eneatipo 3 y Eneatipo 4';
-    }
-    elseif ($eneat3>$eneat2 &&$eneat3>$eneat1&&$eneat3>$eneat4&&$eneat3==$eneat5&&$eneat3>$eneat6&&$eneat3>$eneat7 &&$eneat3>$eneat8 &&$eneat3>$eneat9) {
-       $final='Eneatipo 3 y Eneatipo 5';
-    }
-    elseif ($eneat3>$eneat2 &&$eneat3>$eneat1&&$eneat3>$eneat4&&$eneat3>$eneat5&&$eneat3==$eneat6&&$eneat3>$eneat7 &&$eneat3>$eneat8 &&$eneat3>$eneat9) {
-       $final='Eneatipo 3 y Eneatipo 6';
-    }
-    elseif ($eneat3>$eneat2 &&$eneat3>$eneat1&&$eneat3>$eneat4&&$eneat3>$eneat5&&$eneat3>$eneat6&&$eneat3==$eneat7 &&$eneat3>$eneat8 &&$eneat3>$eneat9) {
-       $final='Eneatipo 3 y Eneatipo 7';
-    }
-    elseif ($eneat3>$eneat2 &&$eneat3>$eneat1&&$eneat3>$eneat4&&$eneat3>$eneat5&&$eneat3>$eneat6&&$eneat3>$eneat7 &&$eneat3==$eneat8 &&$eneat3>$eneat9) {
-       $final='Eneatipo 3 y Eneatipo 8';
-    }
-    elseif ($eneat3>$eneat2 &&$eneat3=$eneat1&&$eneat3>$eneat4&&$eneat3>$eneat5&&$eneat3>$eneat6&&$eneat3>$eneat7 &&$eneat3>$eneat8 &&$eneat3==$eneat9) {
-       $final='Eneatipo 3 y Eneatipo 9';
-    }
-    elseif ($eneat4>$eneat2 &&$eneat4>$eneat3&&$eneat4>$eneat1&&$eneat4>$eneat5&&$eneat4>$eneat6&&$eneat4>$eneat7 &&$eneat4>$eneat8 &&$eneat4>$eneat9) {
-       $final='Eneatipo 4';
-    }
-    elseif ($eneat4>$eneat2 &&$eneat4>$eneat3&&$eneat4>$eneat1&&$eneat4==$eneat5&&$eneat4>$eneat6&&$eneat4>$eneat7 &&$eneat4>$eneat8 &&$eneat4>$eneat9) {
-       $final='Eneatipo 4 y Eneatipo 5';
-    }
-    elseif ($eneat4>$eneat2 &&$eneat4>$eneat3&&$eneat4>$eneat1&&$eneat4>$eneat5&&$eneat4==$eneat6&&$eneat4>$eneat7 &&$eneat4>$eneat8 &&$eneat4>$eneat9) {
-       $final='Eneatipo 4 y Eneatipo 6';
-    }
-    elseif ($eneat4>$eneat2 &&$eneat4>$eneat3&&$eneat4>$eneat1&&$eneat4>$eneat5&&$eneat4>$eneat6&&$eneat4==$eneat7 &&$eneat4>$eneat8 &&$eneat4>$eneat9) {
-       $final='Eneatipo 4 y Eneatipo 7';
-    }
-    elseif ($eneat4>$eneat2 &&$eneat4>$eneat3&&$eneat4>$eneat1&&$eneat4>$eneat5&&$eneat4>$eneat6&&$eneat4>$eneat7 &&$eneat4==$eneat8 &&$eneat4>$eneat9) {
-       $final='Eneatipo 4 y Eneatipo 8';
-    }
-    elseif ($eneat4>$eneat2 &&$eneat4=$eneat3&&$eneat4>$eneat1&&$eneat4>$eneat5&&$eneat4>$eneat6&&$eneat4>$eneat7 &&$eneat4>$eneat8 &&$eneat4==$eneat9) {
-       $final='Eneatipo 4 y Eneatipo 9';
-    }
-    elseif ($eneat5>$eneat2 &&$eneat5>$eneat3&&$eneat5>$eneat4&&$eneat5>$eneat1 &&$eneat5>$eneat6&&$eneat5>$eneat7 &&$eneat5>$eneat8 &&$eneat5>$eneat9) {
-       $final='Eneatipo 5';
-    }
-    elseif ($eneat5>$eneat2 &&$eneat5>$eneat3&&$eneat5>$eneat4&&$eneat5>$eneat1 &&$eneat5==$eneat6&&$eneat5>$eneat7 &&$eneat5>$eneat8 &&$eneat5>$eneat9) {
-       $final='Eneatipo 5 y Eneatipo 6';
-    }
-    elseif ($eneat5>$eneat2 &&$eneat5>$eneat3&&$eneat5>$eneat4&&$eneat5>$eneat1 &&$eneat5>$eneat6&&$eneat5==$eneat7 &&$eneat5>$eneat8 &&$eneat5>$eneat9) {
-       $final='Eneatipo 5 y Eneatipo 7';
-    }
-    elseif ($eneat5>$eneat2 &&$eneat5>$eneat3&&$eneat5>$eneat4&&$eneat5>$eneat1 &&$eneat5>$eneat6&&$eneat5>$eneat7 &&$eneat5==$eneat8 &&$eneat5>$eneat9) {
-       $final='Eneatipo 5 y Eneatipo 8';
-    }
-    elseif ($eneat5>$eneat2 &&$eneat5=$eneat3&&$eneat5>$eneat4&&$eneat5>$eneat5 &&$eneat5>$eneat6&&$eneat5>$eneat7 &&$eneat5>$eneat8 &&$eneat5==$eneat9) {
-       $final='Eneatipo 5 y Eneatipo 9';
-    }
-    elseif ($eneat6>$eneat2 &&$eneat6>$eneat3&&$eneat6>$eneat4&&$eneat6>$eneat5&&$eneat6>$eneat1&&$eneat6>$eneat7 &&$eneat6>$eneat8 &&$eneat6>$eneat9) {
-       $final='Eneatipo 6';
-    }
-    elseif ($eneat6>$eneat2 &&$eneat6>$eneat3&&$eneat6>$eneat4&&$eneat6>$eneat5&&$eneat6>$eneat1&&$eneat6==$eneat7 &&$eneat6>$eneat8 &&$eneat6>$eneat9) {
-       $final='Eneatipo 6 y Eneatipo 7';
-    }
-    elseif ($eneat6>$eneat2 &&$eneat6>$eneat3&&$eneat6>$eneat4&&$eneat6>$eneat5&&$eneat6>$eneat1&&$eneat6>$eneat7 &&$eneat6==$eneat8 &&$eneat6>$eneat9) {
-       $final='Eneatipo 6 y Eneatipo 8';
-    }
-    elseif ($eneat6>$eneat2 &&$eneat6=$eneat3&&$eneat6>$eneat4&&$eneat6>$eneat5&&$eneat6>$eneat1&&$eneat6>$eneat7 &&$eneat6>$eneat8 &&$eneat6==$eneat9) {
-       $final='Eneatipo 6 y Eneatipo 9';
-    }
-    elseif ($eneat7>$eneat2 &&$eneat7>$eneat3&&$eneat7>$eneat4&&$eneat7>$eneat5&&$eneat7>$eneat6&&$eneat7>$eneat1 &&$eneat7>$eneat8 &&$eneat7>$eneat9) {
-       $final='Eneatipo 7';
-    }
-    elseif ($eneat7>$eneat2 &&$eneat7>$eneat3&&$eneat7>$eneat4&&$eneat7>$eneat5&&$eneat7>$eneat6&&$eneat7>$eneat1 &&$eneat7==$eneat8 &&$eneat7>$eneat9) {
-       $final='Eneatipo 7 y Eneatipo 8';
-    }
-    elseif ($eneat7>$eneat2 &&$eneat7=$eneat3&&$eneat7>$eneat4&&$eneat7>$eneat5&&$eneat7>$eneat6&&$eneat7>$eneat1 &&$eneat7>$eneat8 &&$eneat7==$eneat9) {
-       $final='Eneatipo 7 y Eneatipo 9';
-    }
-    elseif ($eneat8>$eneat2 &&$eneat8>$eneat3&&$eneat8>$eneat4&&$eneat8>$eneat5&&$eneat8>$eneat6&&$eneat8>$eneat7 &&$eneat8>$eneat1 &&$eneat8>$eneat9) {
-       $final='Eneatipo 8';
-    }
-    elseif ($eneat8>$eneat2 &&$eneat8=$eneat3&&$eneat8>$eneat4&&$eneat8>$eneat5&&$eneat8>$eneat6&&$eneat8>$eneat7 &&$eneat8>$eneat1 &&$eneat8==$eneat9) {
-       $final='Eneatipo 8 y Eneatipo 9';
-    }
-    elseif ($eneat9>$eneat2 &&$eneat9>$eneat3&&$eneat9>$eneat4&&$eneat9>$eneat5&&$eneat9>$eneat6&&$eneat9>$eneat7 &&$eneat9>$eneat1 &&$eneat9>$eneat8) {
-       $final='Eneatipo 9';
-    }
-    return view('/devolucion', compact('final'));
 
     }
 }

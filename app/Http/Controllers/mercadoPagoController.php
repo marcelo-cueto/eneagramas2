@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 
 
+
 class mercadoPagoController extends Controller
 {
     public function createPreferencePayment()
@@ -26,14 +27,28 @@ class mercadoPagoController extends Controller
     $item->unit_price = 75.56;
     $preference->items = array($item);
     $preference->notification_url = '';
-    $preference->back_urls = [
-      'success' => url('/success'),
-      'pending' => url('/pending'),
-      'failed' => url('/failed'),
-    ];
-    $preference->auto_return = 'approved';
+    $preference->back_urls = array(
+    "success" => URL('/succes'),
+    );
+    $preference->auto_return = "approved";
+
     $preference->save();
 
     return redirect($preference->init_point);
   }
+  public function succes(Request $req){
+    $id=auth()->user()->id;
+    $user=User::find($id);
+    $user->transaction_id=$req['collection_id'];
+    $user->collection_status=$req['collection_status'];
+    $user->merchant_order_id=$req['merchant_order_id'];
+    $user->preference_id=$req['preference_id'];
+    $user->save();
+    $info=$req->request;
+
+    return view('/succes');
+
+
+  }
+
 }

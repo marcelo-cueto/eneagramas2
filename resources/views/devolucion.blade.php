@@ -7,6 +7,17 @@
 
   <div class="central">
     <h2>Resultado</h2>
+    <ul class="resultadoTest">
+     <li>Eneatipo 1: {{round($porcentajes[0], 0, PHP_ROUND_HALF_DOWN)}} %</li>
+     <li>Eneatipo 2: {{round($porcentajes[1], 0, PHP_ROUND_HALF_DOWN)}} %</li>
+     <li>Eneatipo 3: {{round($porcentajes[2], 0, PHP_ROUND_HALF_DOWN)}} %</li>
+     <li>Eneatipo 4: {{round($porcentajes[3], 0, PHP_ROUND_HALF_DOWN)}} %</li>
+     <li>Eneatipo 5: {{round($porcentajes[4], 0, PHP_ROUND_HALF_DOWN)}} %</li>
+     <li>Eneatipo 6: {{round($porcentajes[5], 0, PHP_ROUND_HALF_DOWN)}} %</li>
+     <li>Eneatipo 7: {{round($porcentajes[6], 0, PHP_ROUND_HALF_DOWN)}} %</li>
+     <li>Eneatipo 8: {{round($porcentajes[7], 0, PHP_ROUND_HALF_DOWN)}} %</li>
+     <li>Eneatipo 9: {{round($porcentajes[8], 0, PHP_ROUND_HALF_DOWN)}} %</li>
+  </ul>
       <img src="/storage/eneagrama.png" alt= 300px usemap="#mapaEneagrama">
       <map name="mapaEneagrama">
          <area shape="circle" coords="496, 120, 35" href="mirarme/eneatipo1" alt="EL UNO" title='puto el que lee'>
@@ -19,6 +30,7 @@
          <area shape="circle" coords="144, 120, 35" href="mirarme/eneatipo8" alt="EL OCHO">
          <area shape="circle" coords="320, 56, 35" href="mirarme/eneatipo9" alt="EL NUEVE">
       </map>
+
 
   </div>
 

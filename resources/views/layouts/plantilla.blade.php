@@ -15,21 +15,21 @@
           <i class="fas fa-bars" id='subnavbtn2'></i>
           <div class="enlaces">
             <div class="a">
-              <button class="subnavbtn"><p> MIRARME</p></button>
+              <button class="subnavbtn"><p> ENEATIPOS</p></button>
               <div class='subnav-content'>
-                <a href="/mirarme/eneatipo1"> <p>Eneatipo 1 - El Idealista</p></a>
-                <a href="/mirarme/eneatipo2"><p>Eneatipo 2 - El que da</p></a>
-                <a href="/mirarme/eneatipo3"><p>Eneatipo 3 - El exitoso</p></a>
-                <a href="/mirarme/eneatipo4"><p>Eneatipo 4 - El creativo</p></a>
-                <a href="/mirarme/eneatipo5"><p>Eneatipo 5 - El observador</p></a>
-                <a href="/mirarme/eneatipo6"><p>Eneatipo 6 - El confiable</p></a>
-                <a href="/mirarme/eneatipo7"><p>Eneatipo 7 - El optimista</p></a>
-                <a href="/mirarme/eneatipo8"><p>Eneatipo 8 - El líder</p></a>
-                <a href="/mirarme/eneatipo9"><p>Eneatipo 9 - El pacificador</p></a>
+                <a href="/mirarme/eneatipo1"> <p>El UNO - El Idealista</p></a>
+                <a href="/mirarme/eneatipo2"><p>El DOS - El que da</p></a>
+                <a href="/mirarme/eneatipo3"><p>El TRES - El exitoso</p></a>
+                <a href="/mirarme/eneatipo4"><p>El CUATRO - El creativo</p></a>
+                <a href="/mirarme/eneatipo5"><p>El CINCO - El observador</p></a>
+                <a href="/mirarme/eneatipo6"><p>El SEIS - El confiable</p></a>
+                <a href="/mirarme/eneatipo7"><p>El SIETE - El optimista</p></a>
+                <a href="/mirarme/eneatipo8"><p>El OCHO - El líder</p></a>
+                <a href="/mirarme/eneatipo9"><p>El NUEVE - El pacificador</p></a>
               </div>
             </div>
             <div class="a">
-                <button class="subnavbtn"><p> MIRAR AL MUNDO</p></button>
+                <button class="subnavbtn"><p>MIS COMPLEMENTOS</p></button>
                 <div class='subnav-content'>
                   <a href="/mirar_al_mundo/alas/alas"><p>ALAS</p></a>
                   <a href="/mirar_al_mundo/brazos/brazos"><p>BRAZOS</p></a>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="a">
-              <button class="subnavbtn"><p>MIRAR DENTRO</p> </button>
+              <button class="subnavbtn"><p>EL COMIENZO</p> </button>
               <div class='subnav-content'>
                 <a href="/herida"> <p>EXPERIENCIA INTRAUTERINA- HERIDA PRIMARIA</p></a>
                 <a href="/vincularidad"><p>CENTROS ENERGÉTICOS  - MECANISMO DE VINCULARIDAD</p></a>
@@ -53,15 +53,13 @@
               </div>
             </div>
             <div class="a">
-              <button class="subnavbtn"><a href="recibir1"><p> RECIBIR</p></a></button>
-
-            </div>
-            <div class="a">
-              <button class="subnavbtn"><a href="dar1"><p>DAR</p></a> </button>
-
-
-
+              <button class="subnavbtn"><p> MISION DE VIDA</p></button>
+              <div class='subnav-content'>
+                <a href="recibir1"> <p>RECIBIR</p></a>
+                <a href="dar1"><p>DAR</p></a>
               </div>
+            </div>
+
             </div>
           </div>
         </div>
@@ -69,7 +67,7 @@
     </header>
     <section>
       <div class="test">
-        <h1><a href="/test">Test de Personalidad</a></h1>
+        <h1><a href="/test">Test de Eneatipo</a></h1>
       </div>
       @yield('principal')
       <div class="test">
@@ -83,7 +81,7 @@
         echo "/auth/login";
       }
 
-        @endphp>Compra el Libro</a></h1>
+        @endphp>Comprar el libro</a></h1>
       </div>
     </section>
     <script src='/js/prueba.js'>

@@ -22,9 +22,9 @@ class mercadoPagoController extends Controller
 
     // Crea un ítem en la preferencia
     $item = new \MercadoPago\Item();
-    $item->title = 'Mi producto';
+    $item->title = 'Ebook Eneagrama';
     $item->quantity = 1;
-    $item->unit_price = 75.56;
+    $item->unit_price = 200;
     $preference->items = array($item);
     $preference->notification_url = '';
     $preference->back_urls = array(

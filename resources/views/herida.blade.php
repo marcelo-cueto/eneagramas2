@@ -25,8 +25,8 @@
          lo experimentado durante la vida intrauterina. Para ello existen tres caminos:
          buscar agradar, dar lo que necesitan recibir o construir puentes.
       </p>
-      <ol>
-         <li>En la experiencia intrauterina el UNO siente primordialmente amor, que
+      <ul>
+         <li> <b>En la experiencia intrauterina el UNO </b>siente primordialmente amor, que
             brinda unidad y afecto; su nacimiento está vinculado a una sensación de
             rechazo. Si lo pudiera expresar, el UNO diría: <i>“¿Qué hice mal para que no
             me quieran?”</i> En su anhelo de recuperar la vivencia intrauterina, el UNO
@@ -83,6 +83,6 @@
             NUEVE diría: <i>“¿Por qué ya no siento la presencia?”</i> En su búsqueda
             de recuperar la vivencia intrauterina, el NUEVE construye puentes y
             recurre a la serenidad como instrumento.</li>
-      </ol>
+      </ul>
    </div>
 @endsection

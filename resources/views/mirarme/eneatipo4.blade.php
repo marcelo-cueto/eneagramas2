@@ -31,6 +31,10 @@
             específicas y evitar <i>lo superfluo.</i></li>
          <li>En relación a su cuerpo, <i>lo usa para proyectarse.</i></li>
       </ol>
+      <div class="comoSoy">
+        <a href="/trabajo/trabajo4" class='algo'>Como soy en el trabajo</a>
+        <a href="/amor/amor4" class='algo'>Como soy en el amor</a>
+      </div>
 
    </div>
 

@@ -7,6 +7,9 @@
 
    <div class="central">
       <h2>Puntos ciegos del OCHO</h2>
+      <div>
+         <img src="/storage/ciego8.png" class="img_enea">
+      </div>
       <p>El OCHO es ciego al eje del deber ser, representado por el <a href="/mirarme/eneatipo1">UNO</a> y el <a href="/mirarme/eneatipo6">SEIS</a> en cada
          extremo. En modos opuestos complementarios, el UNO y el SEIS le permitirán
          al OCHO salir de su rebeldía e intentar integrarse. El UNO es “el idealista”. Se

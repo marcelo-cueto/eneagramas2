@@ -7,8 +7,9 @@
 
    <div class="central">
       <h2>Alas del SEIS</h2>
-      <p><img src="/img/alas6.jpg" alt="">
-      </p>
+      <div>
+         <img src="/storage/alas6.png" class="img_enea">
+      </div>
       <p>Las alas del SEIS son: el <a href="/mirarme/eneatipo5">CINCO</a> y el <a href="/mirarme/eneatipo7">SIETE.</a>
       </p>
       <p>¿Cómo es el CINCO y qué le trae al SEIS? El CINCO es el “observador”.

@@ -7,6 +7,9 @@
 
    <div class="central">
       <h2>Puntos ciegos del SEIS</h2>
+      <div>
+         <img src="/storage/ciego6.png" class="img_enea">
+      </div>
       <p>El SEIS es ciego al eje de la fuerza, representado por el <a href="/mirarme/eneatipo4">CUATRO</a> y el <a href="/mirarme/eneatipo8">OCHO</a> en
          cada extremo. En modos opuestos complementarios, el CUATRO y el OCHO
          le permitirán al SEIS superar sus miedos. El CUATRO es “el creativo”. Es una

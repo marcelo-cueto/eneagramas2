@@ -22,9 +22,12 @@ nav{
   justify-content: space-between;
   box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.1);
 }
-nav img{
-  padding-left: 15%;
-  width: 40%;
+nav a{
+  width:20%;
+}
+nav a img{
+  margin-left: 6%;
+  width: 30%;
 }
 .contenedor_pregunta{
   display: flex;
@@ -41,6 +44,10 @@ nav img{
   width: 100%;
   display:none;
 }
+.central div img{
+  width:50%;
+  margin-left: 25%;
+}
 
 .logo:hover .enlaces{
   display: block;
@@ -53,8 +60,7 @@ nav img{
 
 
 .logo{
-  padding-top: 2%;
-  padding-right: 6%;
+
   display: flex;
   flex-direction: column;
   align-content: flex-end;
@@ -234,7 +240,10 @@ nav img{
   align-items: center;
   padding-bottom: 4%;
 }
-
+.divTabla img{
+  margin-top: 3%;
+  width: 90%;
+}
 .warning{
   border: solid 1px red;
   justify-content: center;
@@ -285,6 +294,10 @@ nav img{
 }
 .form button{
   margin: 2%;
+
+}
+.comoSoy a{
+  text-decoration: none;
 
 }
 
@@ -388,6 +401,11 @@ nav img{
 
   text-align: center;
   }
-
+  .comoSoy{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 
 }

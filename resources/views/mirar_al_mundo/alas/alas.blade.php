@@ -12,8 +12,6 @@
          primarios (brazos); dos eneatipos consonantes (ejes) y dos eneatipos ajenos
          (puntos ciegos), que señalan un sendero de crecimiento e integración.
       </p>
-      <p><img src="/img/alas1.jpg" alt="">
-      </p>
       <h2>Alas</h2>
       <p>
          Cada persona desarrolla atributos y características de una o de ambas tipologías

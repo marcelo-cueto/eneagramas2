@@ -11,13 +11,16 @@
 
 
       <p>Esta es la version abreviada del Test, si no esta seguro del resultado, le sugerimos hacer el <a href="/fulltest">TEST COMPLETO</a></p>
-      </div>      <img src="/storage/barraProgreso0.png" alt="">
-      <form class="form" action="/pag2t" method="post">
-            {{ csrf_field() }}
+      </div>      <img src="/storage/barraProgreso3.png" alt="">
+      <form class="form" action="/pag5t" method="post">
+         {{ csrf_field() }}
+         @foreach ($req->request as $re)
+            <input type="hidden" name='pregunta{{$re}}' value={{$re}}>
+         @endforeach
          @foreach ($preguntas as $pregunta)
            <div class="contenedor_pregunta">
              <div class="input">
-               <input type="checkbox" name="pregunta{{$pregunta->id}}" value="{{$pregunta->id}}">
+               <input type="checkbox" name="pregunta{{$pregunta->id}}" value={{$pregunta->id}}>
              </div>
              <div class="chek">
               <label for="pregunta{{$pregunta->id}}"> {{$pregunta->id .') '. $pregunta->pregunta}}</label>
@@ -26,7 +29,6 @@
          @endforeach
          <button type="submit" name="button">Siguiente</button>
       </form>
-
    </div>
 
 @endsection

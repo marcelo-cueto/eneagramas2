@@ -7,6 +7,9 @@
 
    <div class="central">
       <h2>Brazos del CINCO</h2>
+      <div>
+         <img src="/storage/brazos5.png" class="img_enea">
+      </div>
       <p>Los brazos del CINCO son: el <a href="/mirarme/eneatipo7">SIETE</a> y el <a href="/mirarme/eneatipo8">OCHO</a>. En un
          primer momento, el CINCO se siente identificado con los aspectos del SIETE y,
          posteriormente, con los del OCHO.

@@ -7,6 +7,9 @@
 
    <div class="central">
       <h2>Brazos del SIETE</h2>
+      <div>
+         <img src="/storage/brazos7.png" class="img_enea">
+      </div>
       <p>Los brazos del SIETE son: el <a href="/mirarme/eneatipo1">UNO</a> y el <a href="/mirarme/eneatipo5">CINCO.</a> En un primer
          momento, el SIETE se siente identificado con los aspectos del UNO y, posteriormente,
          con los del CINCO.

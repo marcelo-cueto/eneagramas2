@@ -7,6 +7,9 @@
 
    <div class="central">
       <h2>Puntos ciegos del CUATRO</h2>
+      <div>
+         <img src="/storage/ciego4.png" class="img_enea">
+      </div>
       <p>El CUATRO es ciego al eje de la pertenencia, representado por el <a href="/mirarme/eneatipo6">SEIS</a> y el <a href="/mirarme/eneatipo7">SIETE</a>
          en cada extremo. En modos opuestos complementarios, el SEIS y el SIETE le
          permitirán al CUATRO “sentirse parte de”. El SEIS es el “confiable”. Se caracteriza

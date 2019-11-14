@@ -7,8 +7,9 @@
 
    <div class="central">
       <h2>Alas del TRES</h2>
-      <p><img src="/img/alas3.jpg" alt="">
-      </p>
+      <div>
+         <img src="/storage/alas3.png" class="img_enea">
+      </div>
       <p>Las alas del TRES son: el <a href="/mirarme/eneatipo2">DOS</a> y el <a href="/mirarme/eneatipo4">CUATRO.</a>
       </p>
       <p>¿Cómo es el DOS y que le trae al TRES? El DOS es “el que da”. La relación,

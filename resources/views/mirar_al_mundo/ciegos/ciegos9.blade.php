@@ -7,6 +7,9 @@
 
    <div class="central">
       <h2>Puntos ciegos del NUEVE</h2>
+      <div>
+         <img src="/storage/ciego9.png" class="img_enea">
+      </div>
       <p>El NUEVE es ciego al eje de la comunicación, representado por el <a href="/mirarme/eneatipo2">DOS</a>
          y el <a href="/mirarme/eneatipo7">SIETE</a> en cada extremo. En modos opuestos complementarios, el DOS y el
          SIETE le permitirán al NUEVE salir de su pasividad y acercarse a los otros. El DOS

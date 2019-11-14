@@ -7,8 +7,9 @@
 
    <div class="central">
       <h2>Alas del SIETE</h2>
-      <p><img src="/img/alas7.jpg" alt="">
-      </p>
+      <div>
+         <img src="/storage/alas7.png" class="img_enea">
+      </div>
       <p>Las alas del SIETE son: el <a href="/mirarme/eneatipo6">SEIS</a> y el <a href="/mirarme/eneatipo8">OCHO.</a>
       </p>
       <p>¿Cómo es el SEIS y qué le trae al SIETE? El SEIS es el “confiable”. Se

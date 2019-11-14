@@ -7,6 +7,9 @@
 
    <div class="central">
       <h2>Puntos ciegos del TRES</h2>
+      <div>
+         <img src="/storage/ciego3.png" class="img_enea">
+      </div>
       <p>El TRES es ciego al eje del orden, representado por el <a href="/mirarme/eneatipo1">UNO</a> y el
          <a href="/mirarme/eneatipo5">CINCO</a> en cada extremo. En modos opuestos complementarios, el UNO y el
          CINCO le permitirán al TRES salirse de su hacer frenético. El UNO es “el idealista”,

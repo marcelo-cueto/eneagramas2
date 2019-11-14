@@ -7,9 +7,11 @@
 
    <div class="central">
       <h2>Alas del DOS</h2>
-      <p><img src="/img/alas2.jpg" alt="">
-      </p>
-      <p>Las alas del DOS son: el <a href="/mirarme/eneatipo1">UNO</a> y <a href="/mirarme/eneatipo3">el TRES.</a> 
+
+      <div>
+         <img src="/storage/alas2.png" class="img_enea">
+      </div>
+      <p>Las alas del DOS son: el <a href="/mirarme/eneatipo1">UNO</a> y <a href="/mirarme/eneatipo3">el TRES.</a>
       </p>
       <p>¿Cómo es el UNO y qué le trae al DOS? El UNO es “el idealista”. Su energía
          se canaliza en el esfuerzo por mejorar la realidad, tanto dentro como fuera

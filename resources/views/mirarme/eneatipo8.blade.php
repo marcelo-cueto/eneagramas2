@@ -25,7 +25,10 @@
          <li>Cuando habla <i>es imperativo</i>. Se centra en la <i>confrontación</i> y la presión para llegar a la <i>verdad</i>. Al hablarle, es conveniente <i>no intentar imponerse</i>.</li>
          <li>En relación a su cuerpo, <i>lo conserva saludable</i>.</li>
       </ol>
-
+      <div class="comoSoy">
+        <a href="/trabajo/trabajo8" class='algo'>Como soy en el trabajo</a>
+        <a href="/amor/amor8" class='algo'>Como soy en el amor</a>
+      </div>
    </div>
 
 @endsection

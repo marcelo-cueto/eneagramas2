@@ -28,7 +28,10 @@
             conveniente no <i>sobre-demandarlo emocionalmente</i>.</li>
          <li>En relación a su cuerpo, <i>lo emplea como refugio</i>.</li>
       </ol>
-
+      <div class="comoSoy">
+        <a href="/trabajo/trabajo9" class='algo'>Como soy en el trabajo</a>
+        <a href="/amor/amor9" class='algo'>Como soy en el amor</a>
+      </div>
    </div>
 
 @endsection

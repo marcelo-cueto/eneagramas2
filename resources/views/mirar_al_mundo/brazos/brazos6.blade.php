@@ -7,6 +7,9 @@
 
    <div class="central">
       <h2>Brazos del SEIS</h2>
+      <div>
+         <img src="/storage/brazos6.png" class="img_enea">
+      </div>
       <p>Los brazos del SEIS son: el <a href="/mirarme/eneatipo3">TRES</a> y el <a href="/mirarme/eneatipo9">NUEVE.</a> En un primer
          momento, el SEIS se siente identificado con los aspectos del TRES y, posteriormente,
          con los del NUEVE.

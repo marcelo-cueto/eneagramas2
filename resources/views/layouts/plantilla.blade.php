@@ -10,7 +10,7 @@
   <body>
     <header>
       <nav>
-        <a href="/home"><img src="/storage/eneagramaicon.png" alt=""> </a>
+        <a href="/home"><img src="/storage/logo.png" alt=""> </a>
         <div class="logo">
           <i class="fas fa-bars" id='subnavbtn2'></i>
           <div class="enlaces">
@@ -34,6 +34,7 @@
                   <a href="/mirar_al_mundo/alas/alas"><p>ALAS</p></a>
                   <a href="/mirar_al_mundo/brazos/brazos"><p>BRAZOS</p></a>
                   <a href="/mirar_al_mundo/ciegos/ciegos"><p>PUNTOS CIEGOS</p></a>
+                  <a href="/mirar_al_mundo/ejes/ejes"><p>EJES</p></a>
                 </div>
             </div>
             <div class="a">
@@ -53,7 +54,7 @@
               </div>
             </div>
             <div class="a">
-              <button class="subnavbtn"><p> MISION DE VIDA</p></button>
+              <button class="subnavbtn"> <a href="/final"><p> MISION DE VIDA</p></a> </button>
               <div class='subnav-content'>
                 <a href="recibir1"> <p>RECIBIR</p></a>
                 <a href="dar1"><p>DAR</p></a>
@@ -67,7 +68,7 @@
     </header>
     <section>
       <div class="test">
-        <h1><a href="/test">Test de Eneatipo</a></h1>
+        <h1><a href="/pag1t">Test de Eneatipo</a></h1>
       </div>
       @yield('principal')
       <div class="test">

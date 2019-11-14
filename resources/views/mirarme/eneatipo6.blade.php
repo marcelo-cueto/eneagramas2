@@ -30,7 +30,10 @@
             ser <i>considerado, afable</i>.</li>
          <li>En relación a su cuerpo, <i>lo inhibe</i>.</li>
       </ol>
-
+      <div class="comoSoy">
+        <a href="/trabajo/trabajo6" class='algo'>Como soy en el trabajo</a>
+        <a href="/amor/amor6" class='algo'>Como soy en el amor</a>
+      </div>
    </div>
 
 @endsection

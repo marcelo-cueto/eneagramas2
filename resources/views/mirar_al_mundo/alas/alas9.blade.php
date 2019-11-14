@@ -7,8 +7,9 @@
 
    <div class="central">
       <h2>Alas del NUEVE</h2>
-      <p><img src="/img/alas9.jpg" alt="">
-      </p>
+      <div>
+         <img src="/storage/alas9.png" class="img_enea">
+      </div>
       <p>Las alas del NUEVE son: el <a href="/mirarme/eneatipo8">OCHO</a> y el <a href="/mirarme/eneatipo1">UNO.</a>
       </p>
       <p>¿Cómo es el OCHO y qué le trae al NUEVE? El OCHO es el “líder”. Siente

@@ -30,6 +30,10 @@
          <li>En relación a su cuerpo, <i>le importa verse bien.</i> </li>
 
       </ol>
+      <div class="comoSoy">
+        <a href="/trabajo/trabajo1" class='algo'>Como soy en el trabajo</a>
+        <a href="/amor/amor1" class='algo'>Como soy en el amor</a>
+      </div>
 
    </div>
 

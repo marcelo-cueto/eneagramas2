@@ -7,8 +7,9 @@
 
    <div class="central">
       <h2>Alas del OCHO</h2>
-      <p><img src="/img/alas8.jpg" alt="">
-      </p>
+      <div>
+         <img src="/storage/alas8.png" class="img_enea">
+      </div>
       <p>Las alas del OCHO son: el <a href="/mirarme/eneatipo7">SIETE</a> y el <a href="/mirarme/eneatipo9">NUEVE.</a>
       </p>
       <p>¿Cómo es el SIETE y qué le trae al OCHO? El SIETE es “el optimista”.

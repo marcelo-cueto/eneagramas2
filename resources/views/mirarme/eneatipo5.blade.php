@@ -8,7 +8,7 @@
    <div class="central">
       <h2>CARACTERÍSTICAS DEL CINCO: “el observador”</h2>
 
-      <p>Es una persona abstracta, provocadora, sorprendente, heterodoxa y profunda. Si pudiera expresarse, diría: Analizo; pienso. Si los demás fueran profundos y lógicos como yo, la vida sería más interesante. Sin embargo, también puede ser soberbia, fría, difícil de abordar. </p>
+      <p>Es una persona abstracta, provocadora, sorprendente, heterodoxa y profunda. Si pudiera expresarse, diría: "Analizo; pienso. Si los demás fueran profundos y lógicos como yo, la vida sería más interesante". Sin embargo, también puede ser soberbia, fría, difícil de abordar. </p>
       <ol>
          <li>Su autoimagen lo lleva a verse como <i>perceptivo, inteligente, observador,
             distante.</i></li>
@@ -28,7 +28,10 @@
          <i>fundamentar</i>.</li>
          <li>En relación a su cuerpo, <i>se desconecta</i></li>
       </ol>
-
+      <div class="comoSoy">
+        <a href="/trabajo/trabajo5" class='algo'>Como soy en el trabajo</a>
+        <a href="/amor/amor5" class='algo'>Como soy en el amor</a>
+      </div>
    </div>
 
 @endsection

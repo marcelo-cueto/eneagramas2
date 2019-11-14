@@ -7,6 +7,9 @@
 
    <div class="central">
       <h2>Puntos ciegos del UNO</h2>
+      <div>
+         <img src="/storage/ciego1.png" class="img_enea">
+      </div>
       <p>El UNO es ciego al <i>eje de la independencia</i>, representado por el <a href="/mirarme/eneatipo3">TRES</a> y el <a href="/mirarme/eneatipo8">OCHO</a>
          en cada extremo. En modos opuestos complementarios, el TRES y el OCHO le
          permitirán al UNO salir de su rigidez y decirse <i>“yo puedo”</i>. El TRES es “el exitoso”,

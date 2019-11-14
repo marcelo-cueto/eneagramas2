@@ -20,7 +20,7 @@
          @foreach ($preguntas as $pregunta)
            <div class="contenedor_pregunta">
              <div class="input">
-               <input type="checkbox" name="pregunta{{$pregunta->id}}" value="{{$pregunta->id}}">
+               <input type="checkbox" name="pregunta{{$pregunta->id}}" value={{$pregunta->id}}>
              </div>
              <div class="chek">
               <label for="pregunta{{$pregunta->id}}"> {{$pregunta->id .') '. $pregunta->pregunta}}</label>

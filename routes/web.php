@@ -249,7 +249,7 @@ Route::post('/pag7', 'fulltest@septimaLista');
 Route::post('/pag8', 'fulltest@octavaLista');
 Route::post('/pag9', 'fulltest@novenaLista');
 Route::post('/devolucion', 'fulltest@resultado');
-Route::get('/test', 'preguntas@primerLista');
+Route::get('/pag1t', 'preguntas@primerLista');
 Route::post('/pag2t', 'preguntas@segundaLista');
 Route::post('/pag3t', 'preguntas@tercerLista');
 Route::post('/pag4t', 'preguntas@cuartaLista');
@@ -258,4 +258,90 @@ Route::post('/pag6t', 'preguntas@sextaLista');
 Route::post('/pag7t', 'preguntas@septimaLista');
 Route::post('/pag8t', 'preguntas@octavaLista');
 Route::post('/pag9t', 'preguntas@novenaLista');
-Route::post('/devolucion', 'preguntas@resultado');
+Route::post('/devolucion1', 'preguntas@resultado');
+Route::get('/final', function () {
+    return view('/final');});
+Route::get('trabajo/trabajo1', function () {
+    return view('/trabajo/trabajo1');
+});
+Route::get('trabajo/trabajo2', function () {
+    return view('/trabajo/trabajo2');
+});
+Route::get('trabajo/trabajo3', function () {
+    return view('/trabajo/trabajo3');
+});
+Route::get('trabajo/trabajo4', function () {
+    return view('/trabajo/trabajo4');
+});
+Route::get('trabajo/trabajo5', function () {
+    return view('/trabajo/trabajo5');
+});
+Route::get('trabajo/trabajo6', function () {
+    return view('/trabajo/trabajo6');
+});
+Route::get('trabajo/trabajo7', function () {
+    return view('/trabajo/trabajo7');
+});
+Route::get('trabajo/trabajo8', function () {
+    return view('/trabajo/trabajo8');
+});
+Route::get('trabajo/trabajo9', function () {
+    return view('/trabajo/trabajo9');
+});
+Route::get('amor/amor1', function () {
+    return view('/amor/amor1');
+});
+Route::get('amor/amor2', function () {
+    return view('/amor/amor2');
+});
+Route::get('amor/amor3', function () {
+    return view('/amor/amor3');
+});
+Route::get('amor/amor4', function () {
+    return view('/amor/amor4');
+});
+Route::get('amor/amor5', function () {
+    return view('/amor/amor5');
+});
+Route::get('amor/amor6', function () {
+    return view('/amor/amor6');
+});
+Route::get('amor/amor7', function () {
+    return view('/amor/amor7');
+});
+Route::get('amor/amor8', function () {
+    return view('/amor/amor8');
+});
+Route::get('amor/amor9', function () {
+  return view('/amor/amor9');
+});
+Route::get('/mirar_al_mundo/ejes/ejes', function () {
+    return view('/mirar_al_mundo/ejes/ejes');
+});
+Route::get('/mirar_al_mundo/ejes/ejes1', function () {
+    return view('/mirar_al_mundo/ejes/ejes1');
+});
+Route::get('/mirar_al_mundo/ejes/ejes2', function () {
+    return view('/mirar_al_mundo/ejes/ejes2');
+});
+Route::get('/mirar_al_mundo/ejes/ejes3', function () {
+    return view('/mirar_al_mundo/ejes/ejes3');
+});
+Route::get('/mirar_al_mundo/ejes/ejes4', function () {
+    return view('/mirar_al_mundo/ejes/ejes4');
+});
+Route::get('/mirar_al_mundo/ejes/ejes5', function () {
+    return view('/mirar_al_mundo/ejes/ejes5');
+});
+Route::get('/mirar_al_mundo/ejes/ejes6', function () {
+    return view('/mirar_al_mundo/ejes/ejes6');
+});
+Route::get('/mirar_al_mundo/ejes/ejes7', function () {
+    return view('/mirar_al_mundo/ejes/ejes7');
+});
+Route::get('/mirar_al_mundo/ejes/ejes8', function () {
+    return view('/mirar_al_mundo/ejes/ejes8');
+});
+Route::get('/mirar_al_mundo/ejes/ejes9', function () {
+    return view('/mirar_al_mundo/ejes/ejes9');
+});

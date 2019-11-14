@@ -7,6 +7,9 @@
 
    <div class="central">
       <h2>Brazos del NUEVE</h2>
+      <div>
+         <img src="/storage/brazos9.png" class="img_enea">
+      </div>
       <p>Los brazos del NUEVE son: el <a href="/mirarme/eneatipo6">SEIS</a> y el <a href="/mirarme/eneatipo3">TRES.</a> En un primer
          momento, el NUEVE se siente identificado con los aspectos del SEIS y posteriormente,
          con los del TRES.

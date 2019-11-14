@@ -32,7 +32,11 @@
          en los <i>sentimientos</i>, no en el pensamiento.</li>
          <li>En relación a su cuerpo, <i>lo desatiende.</i></li>
       </ol>
-      
+      <div class="comoSoy">
+        <a href="/trabajo/trabajo" class='algo'>Como soy en el trabajo</a>
+        <a href="/amor/amor2" class='algo'>Como soy en el amor</a>
+      </div>
+
    </div>
 
 @endsection
